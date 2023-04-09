@@ -285,7 +285,7 @@ jobs:
       - name: Deploy New Preview
         id: create-preview
         if: ${{ env.UFFIZZI_ACTION == 'create' }}
-        uses: UffizziCloud/preview-action@v2
+        uses: jemand771/preview-action@no-creation-source
         with:
           compose-file: ${{ inputs.compose-file-cache-path }}
           username: ${{ inputs.username }}
